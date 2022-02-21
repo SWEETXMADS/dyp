@@ -1,19 +1,23 @@
+import 'package:dyp/examportal.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:carousel_nullsafety/carousel_nullsafety.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:websafe_svg/websafe_svg.dart';
+import 'package:get/get.dart';
+import 'quiz.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({Key key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
         title: 'DYP '
             'EDUCATION COMPLEX',
         home: AnimatedSplashScreen(
@@ -27,7 +31,7 @@ class MyApp extends StatelessWidget {
 }
 
 class Homepage extends StatefulWidget {
-  const Homepage({Key? key}) : super(key: key);
+  const Homepage({Key key}) : super(key: key);
 
   @override
   _HomepageState createState() => _HomepageState();
@@ -122,7 +126,7 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () =>Get.to(welcomexam()),
               child: ListTile(
                 leading: Icon(
                   Icons.pending_actions,

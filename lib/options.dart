@@ -1,41 +1,74 @@
-
 import 'package:flutter/material.dart';
+import 'package:get/get_state_manager/get_state_manager.dart';
+import 'questioncontroller.dart';
+import '../../../constants.dart';
 
-import 'constants.dart';
+class options extends StatelessWidget {
+  const options({
+    Key key,
+    this.text,
+    this.index,
+    this.press,
+  }) : super(key: key);
+  final String text;
+  final int index;
+  final VoidCallback press;
 
+  @override
+  Widget build(BuildContext context) {
+    return GetBuilder<QuestionController>(
+        init: QuestionController(),
+        builder: (qnController) {
+          Color getTheRightColor() {
+            if (qnController.isAnswered) {
+              if (index == qnController.correctAns) {
+                return kGreenColor;
+              } else if (index == qnController.selectedAns &&
+                  qnController.selectedAns != qnController.correctAns) {
+                return kRedColor;
+              }
+            }
+            return kGrayColor;
+          }
 
-Container options() {
-  return Container(
-    margin: EdgeInsets.only(top: 21),
-    padding: EdgeInsets.all(kDefaultPadding),
-    decoration: BoxDecoration(
-      border: Border.all(color: kGrayColor),
-      borderRadius: BorderRadius.circular(30),
-    ),
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
+          IconData getTheRightIcon() {
+            return getTheRightColor() == kRedColor ? Icons.close : Icons.done;
+          }
 
-        Text(
-          "MANAS LOHE",
-          style: TextStyle(),
-        ),
-        Container(
-          height: 18,
-          width: 18,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              border: Border.all(color: kGrayColor)
-
-
-          ),
-        )
-
-
-      ],
-
-    ),
-  );
+          return InkWell(
+            onTap: press,
+            child: Container(
+              margin: EdgeInsets.only(top: kDefaultPadding),
+              padding: EdgeInsets.all(kDefaultPadding),
+              decoration: BoxDecoration(
+                border: Border.all(color: getTheRightColor()),
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "${index + 1}. $text",
+                    style: TextStyle(color: getTheRightColor(), fontSize: 16),
+                  ),
+                  Container(
+                    height: 26,
+                    width: 26,
+                    decoration: BoxDecoration(
+                      color: getTheRightColor() == kGrayColor
+                          ? Colors.transparent
+                          : getTheRightColor(),
+                      borderRadius: BorderRadius.circular(50),
+                      border: Border.all(color: getTheRightColor()),
+                    ),
+                    child: getTheRightColor() == kGrayColor
+                        ? null
+                        : Icon(getTheRightIcon(), size: 16),
+                  )
+                ],
+              ),
+            ),
+          );
+        });
+  }
 }
-
-

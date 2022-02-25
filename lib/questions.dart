@@ -10,26 +10,26 @@ const List sample_data = [
   {
     "id": 1,
     "question":
-    "Flutter is an open-source UI software development kit created by ______",
-    "options": ['Apple', 'Google', 'Facebook', 'Microsoft'],
-    "answer_index": 1,
+    "Who is the HOD of Artificial Intelligence and Data Science department",
+    "options": ['Mrs Suvarna Patil Mam', 'Shriraj Pawar', 'Parth Ashtikar', 'Saniya Mulla'],
+    "answer_index": 0,
   },
   {
     "id": 2,
-    "question": "When google release Flutter.",
-    "options": ['Jun 2017', 'Jun 2017', 'May 2017', 'May 2018'],
-    "answer_index": 2,
+    "question": "Which year AI&DS department started",
+    "options": [' 2017', ' 2021', '2022', ' 2018'],
+    "answer_index": 1,
   },
   {
     "id": 3,
-    "question": "A memory location that holds a single letter or number.",
-    "options": ['Double', 'Int', 'Char', 'Word'],
+    "question": "What is the name of our college ",
+    "options": ['Dypcop', 'Dypiu', 'Dypcoe', 'Dypiemr'],
     "answer_index": 2,
   },
   {
     "id": 4,
-    "question": "What command do you use to output data to the screen?",
-    "options": ['Cin', 'Count>>', 'Cout', 'Output>>'],
+    "question": "What is the name of our principal?",
+    "options": ['parth', 'saniya', 'Mrs Anupama V Patil', 'shriraj'],
     "answer_index": 2,
   },
 ];

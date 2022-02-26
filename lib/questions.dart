@@ -24,7 +24,7 @@ const List sample_data = [
     "id": 3,
     "question": "What is the name of our college ",
     "options": ['Dypcop', 'Dypiu', 'Dypcoe', 'Dypiemr'],
-    "answer_index": 2,
+    "answer_index": 3,
   },
   {
     "id": 4,

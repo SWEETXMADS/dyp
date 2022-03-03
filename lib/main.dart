@@ -7,6 +7,7 @@ import 'package:websafe_svg/websafe_svg.dart';
 import 'package:get/get.dart';
 import 'package:animated_drawer/views/animated_drawer.dart';
 import 'quiz.dart';
+import 'payments.dart';
 
 void main() {
   runApp(const MyApp());
@@ -171,7 +172,7 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: ()=>Get.to(payments()) ,
                   child: ListTile(
                     leading: Icon(
                       Icons.payment,

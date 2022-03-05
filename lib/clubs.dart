@@ -12,6 +12,7 @@ class clubs extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         title: Text('CLUBS'),
+
       ),
     );
   }

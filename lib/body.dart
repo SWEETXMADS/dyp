@@ -6,7 +6,7 @@ import 'progressbar.dart';
 import 'constants.dart';
 import 'questioncard.dart';
 import 'questions.dart';
-
+import 'clubs.dart';
 
 class body extends StatelessWidget {
   const body({
@@ -26,18 +26,18 @@ class body extends StatelessWidget {
             children: [
               Padding(
                 padding:
-                const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: ProgressBar(),
               ),
               SizedBox(height: kDefaultPadding),
               Padding(
                 padding:
-                const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: Obx(
-                      () => Text.rich(
+                  () => Text.rich(
                     TextSpan(
                       text:
-                      "Question ${_questionController.questionNumber.value}",
+                          "Question ${_questionController.questionNumber.value}",
                       style: Theme.of(context)
                           .textTheme
                           .headline4

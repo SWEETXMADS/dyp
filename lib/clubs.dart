@@ -13,7 +13,9 @@ class clubs extends StatelessWidget {
         centerTitle: true,
         title: Text('CLUBS'),
 
+
       ),
+      body: Container(),
     );
   }
 }

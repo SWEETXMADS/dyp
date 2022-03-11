@@ -15,7 +15,9 @@ class clubs extends StatelessWidget {
 
 
       ),
-      body: Container(),
+      body: Container(
+        child: Row(),
+      ),
     );
   }
 }

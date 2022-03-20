@@ -25,6 +25,7 @@ class questioncard extends StatelessWidget {
         borderRadius: BorderRadius.circular(25),
       ),
       child: Column(
+
         children: [
 
           Text(

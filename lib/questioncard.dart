@@ -29,6 +29,7 @@ class questioncard extends StatelessWidget {
         children: [
 
           Text(
+
             question.question,
             style: Theme.of(context)
                 .textTheme

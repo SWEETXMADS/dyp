@@ -33,6 +33,7 @@ class questioncard extends StatelessWidget {
             question.question,
             style: Theme.of(context)
                 .textTheme
+
                 .headline6
                 .copyWith(color: kBlackColor),
           ),

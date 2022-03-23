@@ -31,6 +31,7 @@ class questioncard extends StatelessWidget {
           Text(
 
             question.question,
+
             style: Theme.of(context)
                 .textTheme
 

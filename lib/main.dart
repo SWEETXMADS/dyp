@@ -84,7 +84,8 @@ class _HomepageState extends State<Homepage> {
           Column(
             children: [
               Center(
-                child: Text(
+                child:
+                Text(
                   'RECENT ALERTS',
                   style: TextStyle(
                       fontStyle: FontStyle.italic,
@@ -96,13 +97,37 @@ class _HomepageState extends State<Homepage> {
                 image: NetworkImage(
                     'https://media0.giphy.com/media/3otO6zntMrmhpvaYX6/200w.webp?cid=ecf05e47muzmxa93xuw6bm2dh4tlvsnkc0zus2nyjn7c65me&rid=200w.webp&ct=g'),
               ),
+              Text('14 COLLEGES 1 BRAND ', style: TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                color: Colors.red
+              ),),
+
               Text(
                 ' OUR DIGNITARIES',
                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
-              )
+              ),
+              Image(
+                image: AssetImage('IMAGES/sanjay.jpeg'),
+              ),
+              Text('VICE CHANCELLOR',style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+
+              ),),
+              Image(image: AssetImage('IMAGES/anupa.jpeg')),
+              Text('DYPIEMR Principal', style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),)
+
+
+
             ],
           )
         ],

@@ -20,6 +20,7 @@ class ProgressBar extends StatelessWidget {
       ),
       child: GetBuilder<QuestionController>(
 
+
         init: QuestionController(),
 
         builder: (controller) {

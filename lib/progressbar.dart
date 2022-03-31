@@ -24,6 +24,7 @@ class ProgressBar extends StatelessWidget {
         init: QuestionController(),
 
         builder: (controller) {
+
           return Stack(
             children: [
               // LayoutBuilder provide us the available space for the conatiner

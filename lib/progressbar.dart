@@ -32,6 +32,7 @@ class ProgressBar extends StatelessWidget {
               // LayoutBuilder provide us the available space for the conatiner
               // constraints.maxWidth needed for our animation
               LayoutBuilder(
+
                 builder: (context, constraints) => Container(
                   // from 0 to 1 it takes 60s
 

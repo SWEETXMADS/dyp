@@ -104,7 +104,7 @@ class _HomepageState extends State<Homepage> {
               ),),
 
               Text(
-                ' OUR DIGNITARIES',
+                ' OUR DIGNITARIES ',
                 style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,

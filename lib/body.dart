@@ -40,6 +40,7 @@ class body extends StatelessWidget {
                       text:
                           "Question ${_questionController.questionNumber.value}",
                       style: Theme.of(context)
+
                           .textTheme
                           .headline4
                           .copyWith(color: kSecondaryColor),

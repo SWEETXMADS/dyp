@@ -35,6 +35,7 @@ class _welcomexamState extends State<welcomexam> {
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 39,
+
                     fontWeight: FontWeight.bold,
 
                   ),

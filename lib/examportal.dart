@@ -25,6 +25,7 @@ class _welcomexamState extends State<welcomexam> {
             padding: const EdgeInsets.all(12.0),
             child: Column(
 
+
               crossAxisAlignment: CrossAxisAlignment.start,
 
               children: [

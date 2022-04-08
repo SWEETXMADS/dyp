@@ -34,6 +34,7 @@ class _welcomexamState extends State<welcomexam> {
                 Text(
                   'EXAM PORTAL,',
                   style: TextStyle(
+
                     color: Colors.white,
                     fontSize: 39,
 

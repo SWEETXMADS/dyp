@@ -33,6 +33,7 @@ class _welcomexamState extends State<welcomexam> {
                 Spacer(),
                 Text(
                   'EXAM PORTAL,',
+
                   style: TextStyle(
 
                     color: Colors.white,

@@ -31,6 +31,7 @@ class _welcomexamState extends State<welcomexam> {
               children: [
 
                 Spacer(),
+
                 Text(
                   'EXAM PORTAL,',
 

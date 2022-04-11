@@ -88,6 +88,7 @@ class _welcomexamState extends State<welcomexam> {
                   child: Container(
                     width: double.infinity ,
                     alignment: Alignment.center,
+
                     padding: EdgeInsets.all(kDefaultPadding * 0.90),
                     decoration: BoxDecoration(
                       gradient: kPrimaryGradient,

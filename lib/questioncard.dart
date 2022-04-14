@@ -20,6 +20,7 @@ class questioncard extends StatelessWidget {
 
     QuestionController _controller = Get.put(QuestionController());
     return Container(
+
       margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
       padding: EdgeInsets.all(kDefaultPadding),
       decoration: BoxDecoration(

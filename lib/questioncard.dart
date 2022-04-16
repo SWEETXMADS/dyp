@@ -25,6 +25,7 @@ class questioncard extends StatelessWidget {
       padding: EdgeInsets.all(kDefaultPadding),
 
 
+
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(25),

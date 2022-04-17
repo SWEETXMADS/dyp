@@ -24,6 +24,7 @@ class questioncard extends StatelessWidget {
     return Container(
 
       margin: EdgeInsets.symmetric(horizontal: kDefaultPadding),
+
       padding: EdgeInsets.all(kDefaultPadding),
 
 

@@ -12,6 +12,7 @@ class questioncard extends StatelessWidget {
     Key key,
     // it means we have to pass this
     @required this.question,
+
   }) : super(key: key);
 
   final Question question;
